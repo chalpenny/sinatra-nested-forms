@@ -3,14 +3,26 @@
 
 <form method="post" action="/pirates">
 
-  <label for="name"> Pirate Name</label>
-  <input type="text" id="name" name="name">
-
-  <label for="height"> Pirate Weight</label>
-  <input type="text" id="height" name="height">
-
-  <label for="weight"> Puppy Age</label>
-  <input type="text" id="weight" name="weight">
+  <label for="pirate_name">Pirate Name</label>
+  <input type="text" id="pirate_name" name="pirate[name]"><br>
+  <label for="pirate_weight">Weight</label>
+  <input type="text" id="pirate_weight" name="pirate[weight]"><br>
+  <label for="pirate_height">Height</label>
+  <input type="text" id="pirate_height" name="pirate[height]"><br>
+  <br>
+  <label for="ship_name_1">Pirate Ship</label>
+  <input type="text" id="ship_name_1" name="pirate[ships][][name]"><br>
+  <label for="ship_type_1">Ship type </label>
+  <input type="text" id="ship_type_1" name="pirate[ships][][type]"><br>
+  <label for="ship_booty_1">Booty</label>
+  <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"><br>
+  <br>
+  <label for="ship_name_2">Pirate Ship</label>
+  <input type="text" id="ship_name_2" name="pirate[ships][][name]"><br>
+  <label for="ship_type_2">Ship type </label>
+  <input type="text" id="ship_type_2" name="pirate[ships][][type]"><br>
+  <label for="ship_booty_2">Booty</label>
+  <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"><br>
 
   <input type="submit" value="Submit">
 
